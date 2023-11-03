@@ -22,12 +22,14 @@ do
        fi
 
        elif [ -L $entry ]
-       then count = `expr $count + 1`
+       then count=`expr $count + 1`
 
        elif [ -d $entry ]
     then count2=`bash $0 $entry $2`
 	 count=`expr $count + $count2`
     fi
-    echo $count
+    
 done
+
+echo $count
 
