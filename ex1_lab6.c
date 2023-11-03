@@ -12,7 +12,8 @@ int main(int argc, char *argv[]){
   if(argc != 4){
     printf("Numar gresit de argumente\n");
   }
- 
+
+  
   char *file_input = argv[1];
   char *file_output = argv[2];
   char ch = argv[3][0];
